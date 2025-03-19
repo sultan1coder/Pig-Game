@@ -12,15 +12,14 @@ const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 
-let scores, currentScore, activePlayer, playing;
+// let scores, currentScore, activePlayer, playing;
 
+const scores = [0, 0];
+let currentScore = 0;
+let activePlayer = 0;
+let playing = true;
 // Starting conditions
 const init = () => {
-  const scores = [0, 0];
-  let currentScore = 0;
-  let activePlayer = 0;
-  let playing = true;
-
   score0El.textContent = 0;
   score1El.textContent = 0;
   current0El.textContent = 0;
@@ -32,7 +31,6 @@ const init = () => {
   player0El.classList.add('player--active');
   player1El.classList.remove('player--active');
 };
-
 init();
 
 const switchPlayer = () => {
