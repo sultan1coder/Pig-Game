@@ -13,6 +13,13 @@ score0El.textContent = 0;
 score1El.textContent = 0;
 diceEl.classList.add('hidden');
 
+// Rolling dice functionality
+btnRoll.addEventListener('click', () => {
+  // 1. Generating a random dice roll
+  // 2. Display dice
+  // 3. Check for rolled 1
+});
+
 /*
 // Selecting elements
 const player0El = document.querySelector('.player--0');
